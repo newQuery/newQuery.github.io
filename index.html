@@ -25,12 +25,20 @@
         <p>Software Development</p>
       </div>
       <div class="skill-item">
-        <img src="https://img.icons8.com/ios/50/00ffcc/bot.png" alt="Bot Development">
-        <p>Bot Development</p>
-      </div>
-      <div class="skill-item">
         <img src="https://img.icons8.com/ios/50/00ffcc/web.png" alt="Web3 Development">
         <p>Web3 Development</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/ios/50/00ffcc/bot.png" alt="Scrapping Development">
+        <p>Scrapping</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/ios/50/00ffcc/bot.png" alt="AI Finetuning / LLMs">
+        <p>AI Finetuning / LLMs</p>
+      </div>
+      <div class="skill-item"></div>
+        <img src="https://img.icons8.com/ios/50/00ffcc/bot.png" alt="Discord & Telegram bot">
+        <p>Discord & Telegram bot</p>
       </div>
     </div>
   </section>
@@ -51,64 +59,125 @@
     </p>
   </section>
 
-  <section id="repositories" class="sci-fi-section">
-    <h2>Featured Repositories</h2>
-    <ul>
-      <li>
-        <h3>
-          <a href="https://github.com/newQuery/discord-vouch-bot" target="_blank">Discord Vouch Bot</a>
-        </h3>
-        <p>
-          A bot to manage vouches on Discord. Technologies used: Discord.js, Node.js.
-        </p>
-        <p>
-          <img src="https://img.shields.io/github/stars/newQuery/discord-vouch-bot?style=social" alt="GitHub stars">
-          <img src="https://img.shields.io/github/forks/newQuery/discord-vouch-bot?style=social" alt="GitHub forks">
-        </p>
-      </li>
-      <li>
-        <h3>
-          <a href="https://github.com/newQuery/discord-wipe-bot" target="_blank">Discord Wipe Bot</a>
-        </h3>
-        <p>
-          A bot for wiping messages in Discord channels. Technologies used: Discord.js, Node.js.
-        </p>
-        <p>
-          <img src="https://img.shields.io/github/stars/newQuery/discord-wipe-bot?style=social" alt="GitHub stars">
-          <img src="https://img.shields.io/github/forks/newQuery/discord-wipe-bot?style=social" alt="GitHub forks">
-        </p>
-      </li>
-      <li>
-        <h3>
-          <a href="https://github.com/newQuery/node-auto-clicker" target="_blank">Node Auto Clicker</a>
-        </h3>
-        <p>
-          A Node.js auto-clicker that automates mouse clicks on specific coordinates. Technologies used: Node.js, Electron.
-        </p>
-        <p>
-          <img src="https://img.shields.io/github/stars/newQuery/node-auto-clicker?style=social" alt="GitHub stars">
-          <img src="https://img.shields.io/github/forks/newQuery/node-auto-clicker?style=social" alt="GitHub forks">
-        </p>
-      </li>
-      <li>
-        <h3>
-          <a href="https://github.com/newQuery/nQCipher-crossplatform" target="_blank">nQCipher Crossplatform</a>
-        </h3>
-        <p>
-          A cross-platform cryptographic library for secure data encryption. Technologies used: C++, Node.js.
-        </p>
-        <p>
-          <img src="https://img.shields.io/github/stars/newQuery/nQCipher-crossplatform?style=social" alt="GitHub stars">
-          <img src="https://img.shields.io/github/forks/newQuery/nQCipher-crossplatform?style=social" alt="GitHub forks">
-        </p>
-      </li>
-    </ul>
-  </section>
+  <section id="featured-work" class="sci-fi-section">
+    <h2>Featured Work</h2>
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab('discord')">Discord Bot</button>
+      <button class="tab-button" onclick="openTab('scripts')">Scripts</button>
+      <button class="tab-button" onclick="openTab('opensource')">Open Source</button>
+    </div>    
 
-  
+    <div class="tab-content" id="discord">
+      <ul>
+        <li>
+          <h3>
+            <a href="https://github.com/newQuery/ai-image-prompt-discordbot" target="_blank">Discord Vouch Bot</a>
+          </h3>
+          <p>Discord bot that enable your server to use AI with a simple prompt. <br>Technologies used: Discord.js, Node.js.</p>
+          <p>
+            <img src="https://img.shields.io/github/stars/newQuery/ai-image-prompt-discordbot?style=social" alt="GitHub stars">
+            <img src="https://img.shields.io/github/forks/newQuery/ai-image-prompt-discordbot?style=social" alt="GitHub forks">
+          </p>
+        </li>
+        <li>
+          <h3>
+            <a href="https://github.com/newQuery/discord-vouch-bot" target="_blank">Discord Vouch Bot</a>
+          </h3>
+          <p>A bot to manage vouches on Discord. <br>Technologies used: Discord.js, Node.js.</p>
+          <p>
+            <img src="https://img.shields.io/github/stars/newQuery/discord-vouch-bot?style=social" alt="GitHub stars">
+            <img src="https://img.shields.io/github/forks/newQuery/discord-vouch-bot?style=social" alt="GitHub forks">
+          </p>
+        </li>
+        <li>
+          <h3>
+            <a href="https://github.com/newQuery/discord-wipe-bot" target="_blank">Discord Wipe Bot</a>
+          </h3>
+          <p>A bot for wiping messages in Discord channels. <br>Technologies used: Discord.js, Node.js.</p>
+          <p>
+            <img src="https://img.shields.io/github/stars/newQuery/discord-wipe-bot?style=social" alt="GitHub stars">
+            <img src="https://img.shields.io/github/forks/newQuery/discord-wipe-bot?style=social" alt="GitHub forks">
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="scripts" style="display:none;">
+      <ul>
+        <li>
+          <h3>
+            <a href="https://github.com/newQuery/shein_img" target="_blank">shein_img</a>
+          </h3>
+          <p>Retrieves images from SHEIN SKU without scraping. <br>Technologies used: Typescript.</p>
+          <p>
+            <img src="https://img.shields.io/github/stars/newQuery/shein_img?style=social" alt="GitHub stars">
+            <img src="https://img.shields.io/github/forks/newQuery/shein_img?style=social" alt="GitHub forks">
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="opensource" style="display:none;">
+      <ul>
+        <li>
+          <h3>
+            <a href="https://github.com/newQuery/node-auto-clicker" target="_blank">Node Auto Clicker</a>
+          </h3>
+          <p>A Node.js auto-clicker that automates mouse clicks on specific coordinates. <br>Technologies used: Node.js, Electron.</p>
+          <p>
+            <img src="https://img.shields.io/github/stars/newQuery/node-auto-clicker?style=social" alt="GitHub stars">
+            <img src="https://img.shields.io/github/forks/newQuery/node-auto-clicker?style=social" alt="GitHub forks">
+          </p>
+        </li>
+        <li>
+          <h3>
+            <a href="https://github.com/newQuery/nQCipher-crossplatform" target="_blank">nQCipher Crossplatform</a>
+          </h3>
+          <p>A cross-platform cryptographic library for secure data encryption. <br>Technologies used: C++, Node.js.</p>
+          <p>
+            <img src="https://img.shields.io/github/stars/newQuery/nQCipher-crossplatform?style=social" alt="GitHub stars">
+            <img src="https://img.shields.io/github/forks/newQuery/nQCipher-crossplatform?style=social" alt="GitHub forks">
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <footer class="sci-fi-footer">
     <p>&copy; 2024 newQuery</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      openTab('discord'); // Open the 'Discord' tab by default on page load
+    });
+
+    function openTab(tabId) {
+      // Hide all tab contents and reset opacity
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach((tab) => {
+        tab.classList.remove('active');
+        setTimeout(() => {
+          tab.style.display = 'none';
+        }, 500); // This matches the transition duration
+      });
+
+      // Remove the active class from all buttons
+      const tabButtons = document.querySelectorAll('.tab-button');
+      tabButtons.forEach((button) => {
+        button.classList.remove('active');
+      });
+
+      // Show the selected tab content with a fade-in effect
+      const selectedTab = document.getElementById(tabId);
+      setTimeout(() => {
+        selectedTab.style.display = 'block';
+        selectedTab.classList.add('active');
+      }, 500); // This matches the transition delay for fade-out
+      
+      // Add active class to the selected button
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
