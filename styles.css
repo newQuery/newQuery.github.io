@@ -1,0 +1,109 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #e0e0e0;
+    background: #0a0a0a;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .sci-fi-header {
+    background: linear-gradient(135deg, #1f1f1f, #333);
+    text-align: center;
+    padding: 50px 20px;
+    color: #00ffcc;
+    border-bottom: 2px solid #00ffcc;
+  }
+  
+  .sci-fi-header h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .sci-fi-header p {
+    font-size: 1.2rem;
+  }
+  
+  .sci-fi-section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .sci-fi-section h2 {
+    font-size: 2.5rem;
+    color: #00ffcc;
+    border-bottom: 1px solid #00ffcc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .sci-fi-section ul {
+    list-style: none;
+  }
+  
+  .sci-fi-section li {
+    margin-bottom: 20px;
+  }
+  
+  .sci-fi-section a {
+    color: #00ffcc;
+    text-decoration: none;
+  }
+  
+  .sci-fi-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .sci-fi-footer {
+    background: linear-gradient(135deg, #1f1f1f, #333);
+    text-align: center;
+    padding: 20px;
+    color: #00ffcc;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .skill-item {
+    flex: 1 1 calc(25% - 40px); /* 4 items per row on desktop */
+    max-width: calc(25% - 40px);
+    text-align: center;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+  
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-item p {
+    font-size: 1.2rem;
+    color: #00ffcc;
+  }
+  
+  .skill-item:hover {
+    background: #333;
+  }
+  
+  @media (max-width: 1024px) {
+    .skill-item {
+      flex: 1 1 calc(50% - 40px); /* 2 items per row on tablets */
+      max-width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skill-item {
+      flex: 1 1 calc(100% - 40px); /* 1 item per row on mobile */
+      max-width: calc(100% - 40px);
+    }
+  }
+  
