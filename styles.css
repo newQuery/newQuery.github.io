@@ -14,11 +14,97 @@ body {
     color: #00ffcc;
     border-bottom: 2px solid #00ffcc;
   }
-  
+
+  /* Default for large view (desktop and up) */
   .sci-fi-header h1 {
-    font-size: 4rem;
+    font-size: 4rem; /* Adjust this for desktop */
     margin-bottom: 10px;
+    display: flex; /* Align items in a row */
+    justify-content: center;
+    align-items: center; /* Vertically center text and image */
+    gap: 3px; /* Spacing between elements */
+    text-align: center;
   }
+
+  .title-part {
+    color: #00ffcc; /* Your theme color */
+  }
+
+  @keyframes rotate-brighten {
+    0% {
+      transform: rotateY(0deg);
+      filter: brightness(1);
+    }
+    50% {
+      transform: rotateY(360deg);
+      filter: brightness(1.5); /* Increase brightness at halfway point */
+    }
+    100% {
+      transform: rotateY(720deg);
+      filter: brightness(1); /* Reset brightness at the end */
+    }
+  }
+  
+  .q-image {
+    width: 60px; /* Image size */
+    object-fit: cover;
+    transition: filter 0.3s ease;
+    animation: rotate-brighten 5s infinite ease-in-out;
+  }
+
+.sci-fi-section h2 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  border-bottom: 1px solid #00ffcc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Tablet view (up to 1024px) */
+@media (max-width: 1024px) {
+  .sci-fi-header h1 {
+    font-size: 3rem; /* Slightly smaller for tablets */
+  }
+
+  .sci-fi-section h2 {
+    font-size: 2rem; /* Scale down for better readability on tablets */
+  }
+
+  .q-image {
+    width: 50px;
+  }
+}
+
+/* Phone view (up to 768px) */
+@media (max-width: 768px) {
+  .sci-fi-header h1 {
+    font-size: 2.5rem; /* Adjust for smaller screens */
+  }
+
+  .sci-fi-section h2 {
+    font-size: 1.8rem; /* Keep h2 readable on mobile */
+  }
+
+  .q-image {
+    width: 40px;
+  }
+}
+
+/* Small phone view (up to 480px) */
+@media (max-width: 480px) {
+  .sci-fi-header h1 {
+    font-size: 2rem; /* Further reduce for small phones */
+  }
+
+  .sci-fi-section h2 {
+    font-size: 1.5rem; /* Fit h2 comfortably on small screens */
+  }
+
+  .q-image {
+    width: 30px;
+  }
+}
+
   
   .sci-fi-header p {
     font-size: 1.2rem;
@@ -27,14 +113,6 @@ body {
   .sci-fi-section {
     padding: 40px 20px;
     border-bottom: 1px solid #333;
-  }
-  
-  .sci-fi-section h2 {
-    font-size: 2.5rem;
-    color: #00ffcc;
-    border-bottom: 1px solid #00ffcc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
   }
   
   .sci-fi-section ul {
