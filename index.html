@@ -205,12 +205,12 @@
     <p>&copy; 2024 newQuery</p>
   </footer>
 
-  <script>
+  <script defer>
     document.addEventListener('DOMContentLoaded', function () {
-      openTab('discord'); // Open the 'Discord' tab by default on page load
+      openTab('discord', true); // Open the 'Discord' tab by default on page load
     });
 
-    function openTab(tabId) {
+    function openTab(tabId, initial = false) {
       // Hide all tab contents and reset opacity
       const tabContents = document.querySelectorAll('.tab-content');
       tabContents.forEach((tab) => {
@@ -222,8 +222,10 @@
 
       // Remove the active class from all buttons
       const tabButtons = document.querySelectorAll('.tab-button');
+      let btns = []
       tabButtons.forEach((button) => {
         button.classList.remove('active');
+        btns.push(button)
       });
 
       // Show the selected tab content with a fade-in effect
@@ -234,7 +236,13 @@
       }, 500); // This matches the transition delay for fade-out
       
       // Add active class to the selected button
-      event.target.classList.add('active');
+      if(!initial) {
+        event.target.classList.add('active');
+      }
+
+      if(initial === true) {
+        btns[0].classList.add('active')
+      }
     }
   </script>
 </body>
