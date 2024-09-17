@@ -89,6 +89,9 @@ body {
   .sci-fi-section h2 {
     font-size: 1.8rem; /* Keep h2 readable on mobile */
   }
+  .sci-fi-header p {
+    font-size: 1.1rem; /* Adjust for smaller screens */
+  }
 
   .q-image {
     max-height: 40px;
