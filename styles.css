@@ -60,6 +60,11 @@ body {
   margin-bottom: 20px;
 }
 
+
+.sci-fi-header p {
+  font-size: 1.2rem;
+}
+
 /* Tablet view (up to 1024px) */
 @media (max-width: 1024px) {
   .sci-fi-header h1 {
@@ -96,6 +101,10 @@ body {
     font-size: 2rem; /* Further reduce for small phones */
   }
 
+  .sci-fi-header p {
+    font-size: .8rem; /* Adjust for smaller screens */
+  }
+
   .sci-fi-section h2 {
     font-size: 1.5rem; /* Fit h2 comfortably on small screens */
   }
@@ -105,10 +114,6 @@ body {
   }
 }
 
-  
-  .sci-fi-header p {
-    font-size: 1.2rem;
-  }
   
   .sci-fi-section {
     padding: 40px 20px;
