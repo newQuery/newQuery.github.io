@@ -46,7 +46,7 @@ body {
   }
   
   .q-image {
-    width: 60px; /* Image size */
+    max-height: 60px;
     object-fit: cover;
     transition: filter 0.3s ease;
     animation: rotate-brighten 5s infinite ease-in-out;
@@ -71,7 +71,7 @@ body {
   }
 
   .q-image {
-    width: 50px;
+    max-height: 50px;
   }
 }
 
@@ -86,7 +86,7 @@ body {
   }
 
   .q-image {
-    width: 40px;
+    max-height: 40px;
   }
 }
 
@@ -101,7 +101,7 @@ body {
   }
 
   .q-image {
-    width: 30px;
+    max-height: 30px;
   }
 }
 
