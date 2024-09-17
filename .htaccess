@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^newquery\.dev$ [NC]
+RewriteRule ^(.*)$ https://www.newquery.dev/$1 [L,R=301]
